@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Manrope", sans-serif;
+    overflow-x: hidden;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    width: 530px;
+    max-width: 90%;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card p {
+    color: hsl(150, 100%, 66%);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.card q {
+    font-size: 23px;
+    font-weight: 800;
+    text-align: center;
+}
+.divider-desktop,
+.divider-mobile {
+    margin-bottom: 1.5rem;
+}
+.divider-mobile {
+    display: none;
+}
+.dice {
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    background-color: hsl(150, 100%, 66%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.dice:hover {
+    box-shadow: 0 0 22px hsl(150, 100%, 66%);
+}
+@media (max-width: 556px) {
+    .card {
+        padding: 30px;
+    }
+    .card q {
+        font-size: 20px;
+    }
+    .divider-mobile {
+        display: block;
+    }
+    .divider-desktop {
+        display: none;
+    }
+}
